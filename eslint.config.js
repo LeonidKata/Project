@@ -19,5 +19,24 @@ export default tseslint.config([
       ecmaVersion: 2020,
       globals: globals.browser,
     },
+    rules: {
+      'prettier/prettier': [
+        'error',
+        {
+          printWidth: 100,
+          tabWidth: 2,
+          useTabs: false,
+          semi: true,
+          singleQuote: true,
+          quoteProps: 'consistent',
+          trailingComma: 'all',
+          bracketSpacing: true,
+          bracketSameLine: false,
+          arrowParens: 'always',
+          endOfLine: 'lf',
+          plugins: ['@trivago/prettier-plugin-sort-imports'],
+        },
+      ],
+    },
   },
 ])
