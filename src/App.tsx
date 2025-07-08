@@ -1,9 +1,12 @@
-import './App.css'
+import './App.css';
+import { Layout } from './shared/ui/layout/Layout';
 
-function App() {
+const App = () => {
 
   return (
-    <>Hello</>
+    <>
+      <Layout/>
+    </>
   )
 }
 
