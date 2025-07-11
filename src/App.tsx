@@ -1,9 +1,15 @@
-import './App.css'
+import './App.css';
+import { Layout } from './app/layout/Layout';
 
-function App() {
+const App = () => {
 
   return (
-    <>Hello</>
+    <>
+      {/* Добавить layout в роутинг и настроить получение дочерних компонентов*/}
+      <Layout>
+        Content
+      </Layout>
+    </>
   )
 }
 
