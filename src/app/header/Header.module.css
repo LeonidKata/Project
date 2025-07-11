@@ -31,7 +31,7 @@
 .signup {
   @apply rounded-[4px] px-[10px] py-[16px] bg-[#FFFFFF] min-w-[60px] h-[44px] text-[#006FFF];
   &:hover {
-    @apply text-[#000000];
+    @apply text-[#445EBD];
     transform: scale(0.99);
     transition: all .3s;
   }
