@@ -26,7 +26,7 @@
 .link {
   @apply text-[16px] text-[#FFFFFF];
   &:hover {
-    @apply text-[#445EBD];
+    @apply text-[#000000];
     transition: all .3s;
   }
 }
