@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+.container {
+    @apply mx-10 bg-[#D3EFFF] rounded-[20px] py-4 px-9;
+}
+
+.wrapper {
+    @apply flex flex-col pl-20 pt-4 bg-white gap-2;
+}
+
+.titleForm {
+    @apply font-sans font-bold text-4xl text-[#445EBD];
+}
+
+.form {
+    @apply grid grid-cols-4 grid-rows-[1fr_10px_1fr] gap-x-7 mb-7;
+}
+
+.formFrom {
+    @apply row-start-1 ;
+}
+
+.swapButton {
+    @apply row-start-2  translate-x-40 w-10 h-10 ;
+}
+
+.formTo {
+    @apply row-start-3;
+}
+
+.formPassengers {
+    @apply col-span-1;
+}
+
+.formDate {
+    @apply col-start-3;
+}
+
+.formButton {
+    @apply col-start-4  row-start-3 flex items-center;
+}
+
+.formRoundTrip {
+    @apply col-start-4 row-start-1 flex items-end h-20;
+}
+
+.roundTrip {
+    @apply flex flex-col gap-4 ;
+}
+
+.formTransfer {
+    @apply col-start-2 row-start-3 flex items-center;
+}
+
+.formSubmit {
+    @apply bg-[#006FFF] w-[127px] h-[48px] font-medium text-[16px];
+}
+
+.input {
+    @apply h-12 w-full;
+}

@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.checkboxLabel {
+    @apply flex gap-2 items-baseline font-normal text-[16px];
+}
