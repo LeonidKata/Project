@@ -1,3 +1,39 @@
 .header {
-  @apply bg-[#445EBD] w-full min-h-[80px];
+  @apply bg-[#445EBD] w-full min-h-[80px] pl-[24px] pr-[24px] flex items-center justify-between
+;
 }
+
+.logoWrapper {
+  @apply flex items-center gap-[5px];
+}
+
+.logo {
+  @apply w-[43px] h-[60px] mr-[5px];
+  &:hover {
+    transform: scale(0.95);
+    transition: all .3s;
+  }
+}
+
+.title {
+  @apply text-[24px] text-[#FFFFFF];
+  &:hover {
+    @apply text-[#000000];
+    transition: all .3s;
+  }
+}
+
+.btnWrapper {
+  @apply flex gap-[10px];
+}
+
+.signin,
+.signup {
+  @apply rounded-[4px] px-[10px] py-[16px] bg-[#FFFFFF] min-w-[60px] h-[44px] text-[#006FFF];
+  &:hover {
+    @apply text-[#000000];
+    transform: scale(0.99);
+    transition: all .3s;
+  }
+}
+
