@@ -1,0 +1,27 @@
+.wrapper-input {
+  @apply max-w-[499px] relative;
+}
+
+.wrapper-error {
+  @apply relative;
+}
+
+.icon {
+  @apply absolute top-[5px];
+}
+
+.label-input-title {
+  @apply font-[400] text-[12px] text-[#000000] pt-[5px];
+}
+
+.input-field-error {
+  @apply border-[1px] border-solid border-[#ED0000];
+}
+
+.input-field-valid {
+  @apply border-[1px] border-solid border-[#64C938];
+}
+
+.error {
+  @apply absolute bottom-[-28px] left-[16px] text-[10px] text-[#ED0000] min-w-[150px];
+}
