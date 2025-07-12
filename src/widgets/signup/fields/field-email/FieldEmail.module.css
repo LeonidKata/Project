@@ -19,7 +19,7 @@
 }
 
 .input-field {
-  @apply border-[1px] border-solid rounded-[4px] p-[12px] text-[#000000] outline-none;
+  @apply border-[1px] border-solid border-[#D9D9D9] rounded-[4px] p-[12px] text-[#000000] outline-none;
 
   &:focus {
     @apply border-[#445EBD];
