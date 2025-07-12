@@ -1,7 +1,8 @@
-import { combineReducers } from "@reduxjs/toolkit";
+import { combineReducers } from '@reduxjs/toolkit';
 
-const placeholderReducer = (state = {}) => state;
+import { rootApi } from './rootApi';
 
 export const rootReducer = combineReducers({
-  _placeholder: placeholderReducer
-})
+  [rootApi.reducerPath]: rootApi.reducer,
+  // Add other reducers here
+});
