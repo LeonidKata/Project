@@ -91,23 +91,21 @@ export const SignUp: FC = () => {
         errors={errors as IFieldErrors}
       />
 
-      <div>
-        <Controller
-          control={control}
-          name="question"
-          rules={{
-            required: 'Выберите секретный вопрос из списка',
-          }}
-          render={({ field }) => (
-            <FieldQuestion
-              field={field}
-              title="Секретный вопрос"
-              placeholder="Выберите секретный вопрос"
-              errors={errors as IFieldErrors}
-            />
-          )}
-        />
-      </div>
+      <Controller
+        control={control}
+        name="question"
+        rules={{
+          required: 'Выберите секретный вопрос из списка',
+        }}
+        render={({ field }) => (
+          <FieldQuestion
+            field={field}
+            title="Секретный вопрос"
+            placeholder="Выберите секретный вопрос"
+            errors={errors as IFieldErrors}
+          />
+        )}
+      />
 
       <FieldAnswer
         {...register('answer', {
