@@ -39,7 +39,7 @@ export const SignUp: FC = () => {
       return true;
     } else {
       setValidEmail(false);
-      return 'Invalid email address';
+      return 'Не корректный email адрес';
     }
   };
 
@@ -59,7 +59,7 @@ export const SignUp: FC = () => {
       return true;
     } else {
       setValidPassword(false);
-      return 'Minimum length is 6 characters';
+      return 'Минимальная длина пароля 6 символов';
     }
   };
 
@@ -71,7 +71,7 @@ export const SignUp: FC = () => {
       return true;
     } else {
       setValidRepeatPassword(false);
-      return 'Passwords must match';
+      return 'Пароли не совпадают';
     }
   };
 
