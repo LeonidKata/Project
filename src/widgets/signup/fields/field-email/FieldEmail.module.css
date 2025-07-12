@@ -1,0 +1,39 @@
+.wrapper-input {
+  @apply max-w-[499px] relative;
+}
+
+.label-input {
+  @apply flex flex-col gap-[2px];
+}
+
+.wrapper-error {
+  @apply relative;
+}
+
+.icon {
+  @apply absolute top-[5px];
+}
+
+.label-input-title {
+  @apply font-[400] text-[12px] text-[#000000] pt-[5px];
+}
+
+.input-field {
+  @apply border-[1px] border-solid border-[#D9D9D9] rounded-[4px] p-[12px] text-[#000000] outline-none;
+
+  &:focus {
+    @apply border-[#445EBD];
+  }
+}
+
+.input-field-error {
+  @apply border-[1px] border-solid border-[#ED0000];
+}
+
+.input-field-valid {
+  @apply border-[1px] border-solid border-[#64C938];
+}
+
+.error {
+  @apply absolute bottom-[-28px] left-[16px] text-[10px] text-[#ED0000] min-w-[150px];
+}

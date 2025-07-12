@@ -1,0 +1,27 @@
+.wrapper-checkbox {
+  @apply pt-[25px] flex gap-[7px] font-[400] text-[12px] mb-[26px] relative;
+}
+
+.wrapper-error {
+  @apply relative;
+}
+
+.icon {
+  @apply absolute top-[2px];
+}
+
+.checkbox {
+  @apply m-[0px];
+
+  &:hover {
+    @apply cursor-pointer;
+  }
+}
+
+.confirm-text {
+  @apply text-[#1DA1F2];
+}
+
+.error {
+  @apply absolute bottom-[-25px] left-[16px] text-[10px] text-[#ED0000] min-w-[150px];
+}
