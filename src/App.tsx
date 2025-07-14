@@ -1,10 +1,10 @@
 import './App.css'
-import { Ticket } from './shared/ui/ticket/ticket'
+import { Ticket } from './shared/ui/Ticket/ticket'
 
 function App() {
 
   return (
-    // <>Hello</>
+
     <Ticket />
   )
 }
