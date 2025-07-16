@@ -1,5 +1,7 @@
 import './App.css';
 import { Layout } from './app/layout/Layout';
+import { Outlet } from 'react-router-dom'
+import './App.css'
 
 const App = () => {
 
@@ -7,7 +9,7 @@ const App = () => {
     <>
       {/* Добавить layout в роутинг и настроить получение дочерних компонентов*/}
       <Layout>
-        Content
+        <Outlet />
       </Layout>
     </>
   )
