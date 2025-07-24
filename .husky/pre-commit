@@ -1,0 +1,9 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "🔍 Запуск pre-commit хука..."
+echo "🎯 Выполняем lint-staged для проверяемых файлов..."
+
+npx lint-staged
+
+echo "✅ lint-staged завершён успешно!"
