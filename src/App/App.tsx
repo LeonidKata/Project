@@ -1,15 +1,17 @@
-import { Outlet } from 'react-router-dom'
-import './App.css'
+import { Outlet } from 'react-router-dom';
+
+import './App.css';
+import { Layout } from './layout/Layout';
+import './styles/reset.css';
 
 function App() {
-
   return (
-    <div>
-      <main>
+    <>
+      <Layout>
         <Outlet />
-      </main>
-    </div>
-  )
+      </Layout>
+    </>
+  );
 }
 
-export default App
+export default App;
