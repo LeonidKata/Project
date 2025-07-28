@@ -1,0 +1,32 @@
+.footer {
+  @apply bg-[#445EBD] w-full min-h-[80px] pl-[24px] pr-[24px] flex items-center justify-between
+}
+
+.linkWrapper {
+  @apply flex gap-[35px];
+}
+
+.link {
+  @apply text-[#445EBD] text-[16px];
+}
+
+.logoWrapper {
+  @apply flex items-center gap-[5px];
+}
+
+.logo {
+  @apply w-[21.5px] h-[25px] mr-[5px];
+  &:hover {
+    transform: scale(0.95);
+    transition: all .3s;
+  }
+}
+
+.title, 
+.link {
+  @apply text-[16px] text-[#FFFFFF];
+  &:hover {
+    @apply text-[#000000];
+    transition: all .3s;
+  }
+}

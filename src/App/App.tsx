@@ -1,15 +1,16 @@
 import { Outlet } from 'react-router-dom';
 
 import './App.css';
+import { Layout } from './layout/Layout';
+import './styles/reset.css';
 
 function App() {
-  console.log();
   return (
-    <div>
-      <main>
+    <>
+      <Layout>
         <Outlet />
-      </main>
-    </div>
+      </Layout>
+    </>
   );
 }
 
