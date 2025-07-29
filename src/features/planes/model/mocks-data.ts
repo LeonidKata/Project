@@ -2,18 +2,143 @@ import type { Planes } from './types.ts';
 
 export const planes: Planes[] = [
   {
-    id:1, aircraftNumber:"sadasd", model:"r", modelYear:1, flightRange:1
+    id: 1,
+    aircraftNumber: 'Ту-134',
+    model: '5134',
+    modelYear: 2018,
+    flightRange: 3000,
   },
   {
-    id:2, aircraftNumber:"ssadasd", model:"r", modelYear:1, flightRange:1
+    id: 2,
+    aircraftNumber: 'Сухой Суперджет-100',
+    model: 'SSJ-100',
+    modelYear: 2016,
+    flightRange: 4578,
   },
   {
-    id:3, aircraftNumber:"asdasd", model:"r", modelYear:1, flightRange:1
+    id: 3,
+    aircraftNumber: 'Ил-96-300',
+    model: '96300',
+    modelYear: 2015,
+    flightRange: 11500,
   },
   {
-    id:4, aircraftNumber:"asdsad", model:"r", modelYear:1, flightRange:1
+    id: 4,
+    aircraftNumber: 'Ан-148',
+    model: '148',
+    modelYear: 2017,
+    flightRange: 4400,
   },
   {
-    id:5, aircraftNumber:"asdasd", model:"r", modelYear:1, flightRange:1
+    id: 5,
+    aircraftNumber: 'Як-42',
+    model: '42',
+    modelYear: 2014,
+    flightRange: 4000,
   },
-]
+  {
+    id: 6,
+    aircraftNumber: 'Ту-204',
+    model: '204',
+    modelYear: 2019,
+    flightRange: 6500,
+  },
+  {
+    id: 7,
+    aircraftNumber: 'Ил-76',
+    model: '76',
+    modelYear: 2015,
+    flightRange: 6700,
+  },
+  {
+    id: 8,
+    aircraftNumber: 'Ан-124 Руслан',
+    model: '124',
+    modelYear: 2016,
+    flightRange: 16500,
+  },
+  {
+    id: 9,
+    aircraftNumber: 'МС-21',
+    model: '21-300',
+    modelYear: 2021,
+    flightRange: 6000,
+  },
+  {
+    id: 10,
+    aircraftNumber: 'Бе-200',
+    model: '200',
+    modelYear: 2018,
+    flightRange: 2100,
+  },
+  {
+    id: 11,
+    aircraftNumber: 'Ту-154',
+    model: '154М',
+    modelYear: 2013,
+    flightRange: 5280,
+  },
+  {
+    id: 12,
+    aircraftNumber: 'Ан-2',
+    model: '2',
+    modelYear: 2017,
+    flightRange: 900,
+  },
+  {
+    id: 13,
+    aircraftNumber: 'Ка-62',
+    model: '62',
+    modelYear: 2020,
+    flightRange: 720,
+  },
+  {
+    id: 14,
+    aircraftNumber: 'Ми-38',
+    model: '38',
+    modelYear: 2019,
+    flightRange: 1300,
+  },
+  {
+    id: 15,
+    aircraftNumber: 'Л-410',
+    model: '410',
+    modelYear: 2018,
+    flightRange: 1500,
+  },
+  {
+    id: 16,
+    aircraftNumber: 'Ту-334',
+    model: '334',
+    modelYear: 2017,
+    flightRange: 4000,
+  },
+  {
+    id: 17,
+    aircraftNumber: 'Ил-114',
+    model: '114',
+    modelYear: 2021,
+    flightRange: 1500,
+  },
+  {
+    id: 18,
+    aircraftNumber: 'Ан-140',
+    model: '140',
+    modelYear: 2016,
+    flightRange: 2100,
+  },
+  {
+    id: 19,
+    aircraftNumber: 'Як-130',
+    model: '130',
+    modelYear: 2015,
+    flightRange: 2000,
+  },
+  {
+    id: 20,
+    aircraftNumber: 'МиГ-35',
+    model: '35',
+    modelYear: 2019,
+    flightRange: 3100,
+  },
+];
