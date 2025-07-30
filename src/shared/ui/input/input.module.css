@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.inputLabel {
+    @apply flex flex-col items-start font-normal text-xs gap-2;
+}
+
+.inputError {
+    @apply text-[#F11C0E] font-normal text-xs;
+}
