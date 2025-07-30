@@ -1,11 +1,7 @@
-@import "tailwindcss";
-
-.container {
-  @apply px-12;
-}
+@import 'tailwindcss';
 
 :global(.table .ant-table-thead .ant-table-cell) {
-  @apply text-[14px] font-semibold italic bg-[#FFFFFF] ;
+  @apply text-[14px] font-semibold italic bg-[#FFFFFF] h-[58px] py-0;
 }
 
 :global(.table .ant-table-tbody .ant-table-cell) {
@@ -16,8 +12,8 @@
   @apply bg-[#D9D9D926];
 }
 
-:global(.table .ant-table-tbody > tr> td) {
-  @apply border-b-0;
+:global(.table .ant-table-tbody > tr > td) {
+  @apply border-b-0 h-[50px] py-0;
 }
 
 :global(.table .ant-table-container) {
@@ -37,11 +33,11 @@
 :global(.tablePagination .ant-pagination-next .ant-pagination-item-link),
 :global(.tablePagination .ant-pagination-jump-next),
 :global(.tablePagination .ant-pagination-jump-prev) {
-  @apply border border-[#d9d9d9] bg-[#D9D9D926] rounded-xs flex items-center justify-center w-10 h-10 m-0 ;
+  @apply border border-[#d9d9d9] bg-[#D9D9D926] rounded-xs flex items-center justify-center w-10 h-10 m-0;
 }
 
 :global(.tablePagination .ant-pagination-item-active) {
-  @apply bg-[#398AEA] ;
+  @apply bg-[#398AEA];
 }
 
 :global(.tablePagination .ant-pagination-item-active a) {
