@@ -1,10 +1,10 @@
-.group3__ {
+/* .group3__ {
     width: 80px;
     height: 17px;
     opacity: 1;
-}
+} */
 
-.flex {
+/* .flex {
     display: flex;
 }
 
@@ -15,6 +15,7 @@
     padding: 10px 10px 10px 15px;
     box-sizing: border-box;
     flex-direction: column;
+    display: flex;
 }
 
 .priceCard:is(:hover, :focus) {
@@ -22,12 +23,14 @@
 }
 
 .priceblock {
+     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     height: auto;
 }
 
 .titlePriceCard {
+    display: flex;
     justify-content: space-between;
     height: 20px;
     font-weight: 500;
@@ -44,9 +47,10 @@
 }
 
 .numberOfTickets {
+    display: flex;
     align-items: center;
     gap: 5px;
     color: #808080;
     font-weight: 400;
     font-size: 14px;
-}
+} */ */

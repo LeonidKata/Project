@@ -1,0 +1,33 @@
+
+
+.group3__ {
+  @apply w-[80px] h-[17px] opacity-100;
+}
+
+.flex {
+  @apply flex;
+}
+
+.priceCard {
+  @apply w-[260px] h-[165px] rounded-[8px] p-[10px_10px_10px_15px] box-border flex flex-col;
+}
+
+.priceCard:hover, .priceCard:focus {
+  @apply shadow-[0_4px_4px_rgba(0,0,0,0.25)];
+}
+
+.priceblock {
+  @apply flex flex-col justify-start h-auto;
+}
+
+.titlePriceCard {
+  @apply flex justify-between items-center h-[20px] font-medium text-[16px] leading-[20px] mt-[10px] text-[#2E2E2E];
+}
+
+.price {
+  @apply font-semibold text-[28px] leading-[32px];
+}
+
+.numberOfTickets {
+  @apply flex items-center gap-[5px] text-[#808080] font-normal text-[14px];
+}

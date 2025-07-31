@@ -1,12 +1,13 @@
 
 import type { FC } from 'react';
-import { PriceCard } from '../PriceCard/PriceCard';
-import Image from './XT 1.svg';
-import arrow from './CaretDown.png';
-import airplaneTakeOf from './AirplaneTakeoff.svg';
-import airplaneLanding from './AirplaneLanding.svg'
-import defis from './---------------------------------.png'
-import styles from './Ticket.module.css';
+import { TariffCard } from '../TariffCard/TariffCard';
+import Image from './icons/XT 1.svg';
+import arrow from './icons/CaretDown.png';
+import airplaneTakeOf from './icons/AirplaneTakeoff.svg';
+import airplaneLanding from './icons/AirplaneLanding.svg'
+import defis from './icons/---------------------------------.png'
+
+import styles from './Ticket.module.css'
 
 interface TicketProps {
     companyName?: string;
@@ -37,31 +38,32 @@ export const Ticket: FC<TicketProps> = ({
 }) => {
 
     return (
-        <div className={`${styles.ticket} ${styles.flex} ${styles.fontBase}`}>
-            <div className={`${styles.flightInformation} ${styles.flex}`}>
-                <header className={`${styles.ticketHeader} ${styles.flex}`}>
-                    <h4 className={`${styles.nameCompany} ${styles.flex}`}><img src={logoCompany} />{companyName}</h4>
-                    <h4 className={`${styles.textLearnMore} ${styles.flex}`}>Прямой рейс<img className={styles.arrow} src={arrow} alt='arrow'></img></h4>
+
+        <div className={styles.ticket}>
+            <div className={styles.flightInformation}>
+                <header className={styles.ticketHeader}>
+                    <h4 className={styles.nameCompany}><img src={logoCompany} />{companyName}</h4>
+                    <button className={styles.textLearnMore}>Прямой рейс<img className='arrow' src={arrow} alt='arrow'></img></button>
                 </header>
-                <div className={`${styles.travelTime} ${styles.flex}`} ><img alt='airplane Take Of' src={airplaneTakeOf} />в пути {travelTime}<img alt='airplane Landing' src={airplaneLanding} /></div>
-                <div className={`${styles.information} ${styles.flex}`}>
-                    <div className={`${styles.departureInformation} ${styles.flex}`}>
-                        <h2 className={`${styles.time} ${styles.flex}`}>{timeDeparture} <span className={styles.airport}>{airportDeparture}</span></h2>
+                <div className={styles.travelTime} ><img alt='airplane Take Of' src={airplaneTakeOf} />в пути {travelTime}<img alt='airplane Landing' src={airplaneLanding} /></div>
+                <div className={styles.information}>
+                    <div className={styles.departureInformation}>
+                        <h2 className={styles.time}>{timeDeparture} <span className='airport'>{airportDeparture}</span></h2>
                         <h4 className={styles.cite}>{departureCity}</h4>
                         <h4 className={styles.date}>{dateDeparture}</h4>
                     </div>
                     <img className={styles.defis} src={defis} alt='defis' />
-                    <div className={`${styles.arrivalInformation} ${styles.flex}`}>
-                        <h2 className={`${styles.time} ${styles.flex}`}><span className={styles.airport}>{airportArrival}</span>{timeArrival}</h2>
+                    <div className={styles.arrivalInformation}>
+                        <h2 className={styles.time} ><span className='airport'>{airportArrival}</span>{timeArrival}</h2>
                         <h4 className={styles.cite}>{cityOfArrival}</h4>
                         <h4 className={styles.date}>{dateArrival}</h4>
                     </div>
                 </div>
             </div>
-            <div className={`${styles.pricingPlans} ${styles.flex}`}>
-                <PriceCard priceName='Эконом Базовый' price={3787} numberTickets={2} />
-                <PriceCard priceName='Эконом Стандарт' price={5887} numberTickets={15} />
-                <PriceCard priceName='Эконом Плюс' price={12437} numberTickets={11} />
+            <div className={styles.pricingPlans}>
+                <TariffCard priceName='Эконом Базовый' price={3787} numberTickets={2} />
+                <TariffCard priceName='Эконом Стандарт' price={5887} numberTickets={15} />
+                <TariffCard priceName='Эконом Плюс' price={12437} numberTickets={11} />
             </div>
         </div>
     )
