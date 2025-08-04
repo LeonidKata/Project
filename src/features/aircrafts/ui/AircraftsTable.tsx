@@ -1,10 +1,11 @@
-import { Button, Table } from 'antd';
+import { Table } from 'antd';
 import type { TableProps } from 'antd/lib/table';
 
 import type { FC } from 'react';
 
+import { Button } from '../../../shared/ui/button';
 import type { Planes } from '../model/types.ts';
-import styles from './PlanesTable.module.css';
+import styles from './AircraftsTable.module.css';
 
 interface Props extends TableProps {
   data: Planes[];
@@ -49,13 +50,13 @@ const columns: TableProps<Planes>['columns'] = [
     ),
   },
 ];
-export const AirCraftsTable: FC<Props> = ({ data }) => {
+export const AircraftsTable: FC<Props> = ({ data }) => {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
         <h1 className={styles.title}>Самолеты</h1>
-        <Button>
-          <span className={styles.buttonTex}>Добавить самолет</span>
+        <Button className={styles.addButton}>
+          <span className={styles.addButtonText}>Добавить самолет</span>
           <svg
             width="22"
             height="21"
