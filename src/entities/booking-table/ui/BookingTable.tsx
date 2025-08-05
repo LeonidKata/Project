@@ -1,8 +1,6 @@
 import { Table } from 'antd';
 import type { TableProps } from 'antd/lib/table';
 
-import type { FC } from 'react';
-
 import { ActionTableIcon } from '../../../assets/icons/ActionTableIcon.tsx';
 import { GearIcon } from '../../../assets/icons/GearIcon.tsx';
 import { Button } from '../../../shared/ui/button';
@@ -49,6 +47,6 @@ const columns: TableProps<Booking>['columns'] = [
   },
 ];
 
-export const BookingTable: FC<Props> = ({ data }) => {
+export const BookingTable = ({ data }: Props) => {
   return <Table dataSource={data} columns={columns} />;
 };
