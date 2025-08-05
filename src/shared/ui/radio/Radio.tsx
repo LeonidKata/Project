@@ -1,6 +1,8 @@
-import type { FC } from 'react';
 import type { RadioProps } from 'antd';
 import { Radio as AntdRadio } from 'antd';
+
+import type { FC } from 'react';
+
 import styles from './Radio.module.css';
 
 interface Props extends RadioProps {
@@ -17,4 +19,3 @@ export const Radio: FC<Props> = ({ label, ...props }) => {
     </>
   );
 };
-
