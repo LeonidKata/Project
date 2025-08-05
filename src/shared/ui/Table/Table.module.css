@@ -8,6 +8,10 @@
   @apply text-[14px] font-normal italic;
 }
 
+:global(.table .ant-table-column-sorters) {
+  @apply inline-flex items-center gap-1;
+}
+
 :global(.table .ant-table-tbody > tr:nth-child(even) > td) {
   @apply bg-[#D9D9D926];
 }
