@@ -1,0 +1,79 @@
+@import 'tailwindcss';
+
+button {
+  all: unset;
+}
+
+.ticket {
+  @apply w-[1356px] h-[195px] bg-white rounded-[6px] shadow-[0_4px_4px_rgba(0, 0, 0, 0.25)] p-[10px_15px] flex justify-between;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: Inter, system-ui, Helvetica, Arial, sans-serif;
+}
+
+.flightInformation {
+  @apply w-[500px] h-[165px] rounded-[8px] p-[10px_20px] flex flex-col items-center;
+}
+
+.ticketHeader {
+  @apply flex justify-between items-center w-full h-[40px];
+}
+
+.nameCompany {
+  @apply flex justify-between items-center gap-[10px] text-[#808080] font-medium;
+}
+
+.textLearnMore {
+  @apply flex items-center justify-between h-[20px] text-center font-medium text-[16px] leading-[20px] text-[#4797FF] cursor-pointer;
+
+  &:focus {
+    @apply opacity-50;
+  }
+}
+
+.arrow {
+  @apply inline-block align-middle ml-[5px];
+}
+
+.travelTime {
+  @apply text-[#808080] font-medium flex items-center justify-center gap-[5px] w-[276px] h-[20px];
+}
+
+.information {
+  @apply flex justify-between items-center h-[90px] w-full;
+}
+
+.departureInformation,
+.arrivalInformation {
+  @apply flex flex-col justify-between w-[123px] h-[74px];
+}
+
+.departureInformation {
+  @apply items-start;
+}
+
+.arrivalInformation {
+  @apply items-end;
+}
+
+.time {
+  @apply font-semibold text-[#2E2E2E] flex justify-between items-center w-full m-0;
+}
+
+.cite,
+.date {
+  @apply font-medium text-[#808080] m-0 text-[16px];
+}
+
+.airport {
+  @apply font-medium text-[#2E2E2E] align-middle text-[16px] leading-[20px];
+}
+
+.defis {
+  @apply self-start mt-[17px] w-[220px];
+}
+
+.pricingPlans {
+  @apply flex items-center justify-between gap-[15px];
+}
