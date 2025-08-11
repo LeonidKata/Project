@@ -1,6 +1,6 @@
-import type { Planes } from './types.ts';
+import type { Aircraft } from './types.ts';
 
-export const planes: Planes[] = [
+export const aircraft: Aircraft[] = [
   {
     id: 1,
     aircraftNumber: 'Ту-134',

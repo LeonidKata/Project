@@ -9,7 +9,3 @@
 .title {
   @apply italic text-xl font-semibold;
 }
-
-.addButton {
-  @apply h-10 italic text-[14px] font-semibold bg-[#DEDEDE];
-}

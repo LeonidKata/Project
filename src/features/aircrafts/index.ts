@@ -1,2 +1,1 @@
-export { AircraftsTable } from './ui/AircraftsTable.tsx';
-export { planes } from './model/mocks-data.ts';
+export { AddAircraft } from './ui/AddAircraft.tsx';

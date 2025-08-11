@@ -1,9 +1,9 @@
-import { AircraftsTable, planes } from '../../features/aircrafts';
+import { Aircraft } from '../../widgets';
 
 export const AirCraftsPage = () => {
   return (
     <>
-      <AircraftsTable data={planes} />
+      <Aircraft />
     </>
   );
 };

@@ -1,4 +1,4 @@
-export interface Planes {
+export interface Aircraft {
   id: number;
   aircraftNumber: string;
   model: string;
