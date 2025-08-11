@@ -1,6 +1,6 @@
 import { Aircraft } from '../../widgets';
 
-export const AirCraftsPage = () => {
+export const AirCraftPage = () => {
   return (
     <>
       <Aircraft />

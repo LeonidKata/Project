@@ -1,6 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom';
 
-import { AirCraftsPage } from '../Pages/Aircrafts/AirCraftsPage.tsx';
+import { AirCraftPage } from '../Pages/Aircraft/AirCraftPage.tsx';
 import { Home } from '../Pages/Home/Home';
 import { NotFound } from '../Pages/NotFound/NotFound';
 import App from './App';
@@ -19,8 +19,8 @@ export const router = createBrowserRouter([
         element: <NotFound />,
       },
       {
-        path: 'aircrafts',
-        element: <AirCraftsPage />,
+        path: 'aircraft',
+        element: <AirCraftPage />,
       },
     ],
   },
