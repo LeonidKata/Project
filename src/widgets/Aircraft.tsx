@@ -1,6 +1,6 @@
 import { aircraft } from '../entities/aircraft/';
 import { AircraftTable } from '../entities/aircraft/';
-import { AddAircraft } from '../features/aircrafts';
+import { AddAircraft } from '../features/aircraft';
 import styles from './Aircraft.module.css';
 
 export const Aircraft = () => {
