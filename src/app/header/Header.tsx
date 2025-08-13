@@ -1,5 +1,7 @@
 import type { FC } from 'react';
 
+import { Link } from 'react-router-dom';
+
 import styles from './Header.module.css';
 
 export const Header: FC = () => {
@@ -38,9 +40,9 @@ export const Header: FC = () => {
         <p className={styles.title}>Air Alien</p>
       </a>
       <div className={styles.btnWrapper}>
-        <a href="#0" className={styles.signin}>
+        <Link to="/signin" className={styles.signin}>
           Вход
-        </a>
+        </Link>
         <a href="#0" className={styles.signup}>
           Регистрация
         </a>
