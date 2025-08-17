@@ -57,5 +57,11 @@ const columns: TableProps<Destination>['columns'] = [
 ];
 
 export const DestinationTable = ({ data }: Props) => {
-  return <Table dataSource={data} columns={columns} />;
+  return (
+    <Table
+      dataSource={data}
+      columns={columns}
+      pagination={{ pageSize: 10, hideOnSinglePage: false, position: ['bottomLeft'] }}
+    />
+  );
 };
