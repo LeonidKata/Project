@@ -6,13 +6,13 @@ export const Footer: FC = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.linkWrapper}>
-        <a href="#0" className={styles.link}>
+        <a href="#" className={styles.link}>
           О нас
         </a>
-        <a href="#0" className={styles.link}>
+        <a href="#" className={styles.link}>
           Политика конфиденциальности
         </a>
-        <a href="#0" className={styles.link}>
+        <a href="#" className={styles.link}>
           Связаться с нами
         </a>
       </div>
