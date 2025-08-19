@@ -1,0 +1,21 @@
+.form {
+  @apply w-full max-w-[600px] min-h-[700px] pt-[26px] pl-[50px] pr-[50px] pb-[20px] bg-[#FFFFFF] rounded-[20px] m-auto box-border;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.title {
+  @apply font-[700] text-[36px] leading-[156%] text-[#4A4A4A] mb-[15px];
+}
+
+.wrapper-button {
+  @apply w-full flex justify-center;
+}
+
+.signup-button {
+  @apply text-[16px] text-[#FFFFFF] pt-[10px] pr-[16px] pb-[10px] pl-[16px] rounded-[4px] bg-[#445EBD] border-0 outline-0;
+  &:hover {
+    @apply cursor-pointer;
+    transform: scale(0.99);
+    transition: all 0.3s;
+  }
+}

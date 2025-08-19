@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery, retry } from '@reduxjs/toolkit/query/react';
 
-import { API_URL } from '../shared/api/rootApi.config';
+import { API_URL } from '../../shared/api/rootApi.config';
 
 export const rootApi = createApi({
   reducerPath: 'rootApi',
@@ -11,7 +11,7 @@ export const rootApi = createApi({
     // Тестовый эндпоинт получения всех бронирований
     getBookings: builder.query<string, void>({
       query: () => '/bookings',
-      transformResponse: (response: { content: any }) => response.content,
+      transformResponse: (response: { content }) => response.content,
     }),
     // Другие эндпоинты
   }),
