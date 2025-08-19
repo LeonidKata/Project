@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import type { FC } from 'react';
 
 import { TariffCard } from '../../../Widgets/TariffCard/ui/TariffCard';

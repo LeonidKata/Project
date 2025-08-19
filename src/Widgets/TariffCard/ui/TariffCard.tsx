@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import type { FC } from 'react';
 
 import easyTariff from '../icons/Group 372.png';
