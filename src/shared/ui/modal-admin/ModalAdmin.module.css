@@ -1,0 +1,29 @@
+.modalContainer {
+  @apply fixed inset-[0px] flex justify-center items-center z-[1000];
+}
+
+.modalOverlay {
+  @apply absolute inset-[0px] bg-[#000000] opacity-[.6];
+}
+
+.modalContent {
+  @apply relative px-[25px] py-[33px] bg-[#FFFFFF] w-[600px] min-h-[469px];
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.titleWrapper {
+  @apply flex items-center justify-between mb-[39px];
+}
+
+.title {
+  @apply italic text-[21px] text-[#818080];
+}
+
+.buttonSubmit {
+  @apply rounded-[2px] w-full h-[39px];
+  border: 1px solid #dedede;
+  transition: all 0.4s;
+  &:hover {
+    transform: scale(0.98);
+  }
+}
