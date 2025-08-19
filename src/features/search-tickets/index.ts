@@ -1,1 +1,1 @@
-export {SearchTickets} from "./ui/SearchTickets.tsx"
+export { SearchTickets } from './ui/SearchTickets.tsx';
