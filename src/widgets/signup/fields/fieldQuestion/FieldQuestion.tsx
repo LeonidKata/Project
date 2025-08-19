@@ -2,7 +2,7 @@ import clsx from 'clsx';
 
 import { forwardRef } from 'react';
 
-import Select from 'react-select';
+import Select, { type StylesConfig } from 'react-select';
 
 import type { IField } from '../fields.interface';
 import styles from './FieldQuestion.module.css';
@@ -15,27 +15,27 @@ export const FieldQuestion = forwardRef<HTMLInputElement, IField>(
       { value: 'year', label: 'Ваш год рождения ?' },
     ];
 
-    const customStyles = {
-      container: (provided: any) => ({
+    const customStyles: StylesConfig = {
+      container: (provided) => ({
         ...provided,
         fontFamily: 'Arial, sans-serif',
         fontSize: '14px',
       }),
-      control: (provided: any, state: any) => ({
+      control: (provided, state) => ({
         ...provided,
         outline: 'none',
         fontSize: '13px',
         boxShadow: state.isFocused ? 'none' : provided.boxShadow,
         borderColor: state.isFocused ? '#C2C2C2' : provided.borderColor,
       }),
-      input: (provided: any) => ({
+      input: (provided) => ({
         ...provided,
         outline: 'none',
       }),
     };
 
     return (
-      <div className={clsx(styles['wrapper-input'])}>
+      <div ref={_ref} className={clsx(styles['wrapper-input'])}>
         <p className={clsx(styles['label-input-title'])}>{title}</p>
         <Select
           {...field}

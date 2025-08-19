@@ -28,7 +28,7 @@ export const SignUp: FC = () => {
     control,
   } = useForm({ mode: 'onChange' });
 
-  const onSubmit = (data: any) => {
+  const onSubmit = (data) => {
     //post data to server
     console.log('Данные формы:', data);
   };
