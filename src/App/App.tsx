@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Outlet } from 'react-router-dom';
 
 import { Layout } from '../app/layout/Layout';
