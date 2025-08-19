@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import type { FC } from 'react';
 
 import { Controller, type SubmitHandler, useForm } from 'react-hook-form';
