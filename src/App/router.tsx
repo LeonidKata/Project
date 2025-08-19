@@ -1,5 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom';
 
+import { AirCraftPage } from '../Pages/Aircraft/AirCraftPage.tsx';
 import { BookingPage } from '../Pages/Booking/BookingPage.tsx';
 import { Home } from '../Pages/Home/Home';
 import { NotFound } from '../Pages/NotFound/NotFound';
@@ -22,6 +23,10 @@ export const router = createBrowserRouter([
       {
         path: '*',
         element: <NotFound />,
+      },
+      {
+        path: 'aircraft',
+        element: <AirCraftPage />,
       },
       {
         path: 'booking',
