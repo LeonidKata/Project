@@ -1,6 +1,8 @@
-import type { FC } from 'react';
 import type { InputProps } from 'antd';
 import { Input as AntInput } from 'antd';
+
+import type { FC } from 'react';
+
 import styles from './input.module.css';
 
 interface Props extends InputProps {
@@ -13,12 +15,9 @@ export const Input: FC<Props> = ({ label, error, ...props }) => {
     <div>
       <label className={styles.inputLabel}>
         <span>{label}</span>
-        <AntInput{...props} status={error ? 'error' : ''} />
-        {error && (
-          <span className={styles.inputError}>{error}</span>
-        )}
+        <AntInput {...props} status={error ? 'error' : ''} />
+        {error && <span className={styles.inputError}>{error}</span>}
       </label>
     </div>
   );
 };
-

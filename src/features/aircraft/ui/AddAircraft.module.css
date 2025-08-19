@@ -1,0 +1,5 @@
+@import 'tailwindcss';
+
+.addButton {
+  @apply h-10 italic text-[14px] font-semibold bg-[#DEDEDE];
+}
