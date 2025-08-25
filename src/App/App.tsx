@@ -1,16 +1,14 @@
-/* eslint-disable prettier/prettier */
-// import { Outlet } from 'react-router-dom';
-import { Passengers } from '../Pages/Passengers/ui/Passengers';
+
+import { Outlet } from 'react-router-dom';
+import { Layout } from '../app/layout/Layout';
+import '../app/styles/reset.css';
 import './App.css';
-import { Layout } from './layout/Layout';
-import './styles/reset.css';
 
 function App() {
   return (
     <>
       <Layout>
-        {/* <Outlet /> */}
-        <Passengers />
+        <Outlet /> 
       </Layout>
     </>
   );
