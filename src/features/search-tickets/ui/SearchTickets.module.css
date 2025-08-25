@@ -59,3 +59,7 @@
 .input {
   @apply h-12 w-full;
 }
+
+.img-Container {
+  @apply flex justify-center;
+}
