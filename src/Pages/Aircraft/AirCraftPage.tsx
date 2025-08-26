@@ -1,4 +1,4 @@
-import { Aircraft } from '../../widgets';
+import { Aircraft } from '../../Widgets/aircraft';
 
 export const AirCraftPage = () => {
   return (
