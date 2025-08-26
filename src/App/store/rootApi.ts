@@ -1,5 +1,7 @@
 import { createApi, fetchBaseQuery, retry } from '@reduxjs/toolkit/query/react';
 
+import type { AircraftResponse } from '@/Entities/aircraft/model/types.ts';
+
 import { API_URL } from '../../shared/api/rootApi.config';
 
 export const rootApi = createApi({
@@ -13,9 +15,11 @@ export const rootApi = createApi({
       query: () => '/bookings',
       transformResponse: (response: { content }) => response.content,
     }),
-    // Другие эндпоинты
+    getAircraft: builder.query<AircraftResponse, { page: number; size: number }>({
+      query: ({ page, size }) => `/aircrafts?page=${page}&size=${size}`,
+    }),
   }),
 });
 
-export const { useGetBookingsQuery } = rootApi;
+export const { useGetBookingsQuery, useGetAircraftQuery } = rootApi;
 export default rootApi;

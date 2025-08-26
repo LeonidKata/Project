@@ -1,1 +1,1 @@
-export { Aircraft } from './Aircraft.tsx';
+export { Aircraft } from './aircraft/Aircraft.tsx';
