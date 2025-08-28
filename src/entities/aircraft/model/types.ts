@@ -1,7 +1,9 @@
 export interface Aircraft {
   id: number;
-  aircraftNumber: string;
-  model: string;
-  modelYear: number;
-  flightRange: number;
+  fullName: string;
+  ticketNumber: string;
+  flightCode: string;
+  departureDateTime: string;
+  arrivalDateTime: string;
+  boardingNumber: number;
 }
