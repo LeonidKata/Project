@@ -1,4 +1,4 @@
-export interface TimezoneTable {
+export interface TimeZoneTable {
   id: string;
   countryName: string;
   cityName: string;
@@ -29,7 +29,7 @@ export interface ResponseTableData {
   number: number;
   size: number;
   numberOfElements: number;
-  content: TimezoneTable[];
+  content: TimeZoneTable[];
   sort: Sort[];
   first: boolean;
   last: boolean;
