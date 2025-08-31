@@ -15,6 +15,7 @@ export const Table = <T extends object>({ ...props }: Props<T>) => {
         bordered
         className="table"
         pagination={{
+          ...props.pagination,
           className: 'tablePagination',
           position: ['bottomLeft'],
           showSizeChanger: false,

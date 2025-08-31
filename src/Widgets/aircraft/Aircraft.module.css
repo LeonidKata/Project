@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 
 .container {
-  @apply flex flex-col gap-5 w-[95%];
+  @apply flex flex-col gap-[10px] min-w-[100%];
 }
 .header {
   @apply flex justify-between items-center;

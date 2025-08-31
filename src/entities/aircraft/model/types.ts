@@ -5,3 +5,7 @@ export interface Aircraft {
   modelYear: number;
   flightRange: number;
 }
+export interface AircraftResponse {
+  content: Aircraft[];
+  totalElements: number;
+}
