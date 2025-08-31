@@ -1,11 +1,11 @@
-import { Table } from 'antd';
 import type { TableProps } from 'antd/lib/table';
 
 import { ActionTableIcon } from '../../../assets/icons/ActionTableIcon.tsx';
+import { Table } from '../../../shared/ui/Table';
 import { Button } from '../../../shared/ui/button';
 import type { Aircraft } from '../model/types.ts';
 
-interface Props extends TableProps {
+interface Props extends TableProps<Aircraft> {
   data: Aircraft[];
 }
 
@@ -35,6 +35,6 @@ const columns: TableProps<Aircraft>['columns'] = [
   },
 ];
 
-export const AircraftTable = ({ data }: Props) => {
-  return <Table dataSource={data} columns={columns} />;
+export const AircraftTable = ({ data, ...rest }: Props) => {
+  return <Table dataSource={data} columns={columns} {...rest} />;
 };

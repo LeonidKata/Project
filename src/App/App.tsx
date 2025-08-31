@@ -1,15 +1,14 @@
-// import { Outlet } from 'react-router-dom';
-import { SeatingArrangementsPage } from '../Pages/SeatingArrangements/ui/SeatingArrangementsPage';
+import { Outlet } from 'react-router-dom';
+
+import { Layout } from '../App/layout/Layout';
 import '../app/styles/reset.css';
 import './App.css';
-import { Layout } from './layout/Layout';
 
 function App() {
   return (
     <>
       <Layout>
-        {/* <Outlet /> */}
-        <SeatingArrangementsPage />
+        <Outlet />
       </Layout>
     </>
   );

@@ -1,4 +1,4 @@
-export interface Aircraft {
+export interface Tickets {
   id: number;
   fullName: string;
   ticketNumber: string;
@@ -7,7 +7,7 @@ export interface Aircraft {
   arrivalDateTime: string;
   boardingNumber: number;
 }
-export interface AircraftResponse {
-  content: Aircraft[];
-  totalElements: number;
+
+export interface PropsTickets {
+  data?: Tickets[];
 }

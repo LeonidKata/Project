@@ -1,0 +1,11 @@
+@import 'tailwindcss';
+
+.container {
+  @apply flex flex-col gap-[10px] min-w-[100%];
+}
+.header {
+  @apply flex justify-between items-center;
+}
+.title {
+  @apply italic text-xl font-semibold;
+}
