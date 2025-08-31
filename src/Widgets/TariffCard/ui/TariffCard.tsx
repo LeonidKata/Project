@@ -4,7 +4,7 @@ import easyTariff from '../icons/Group 372.png';
 import middleTariff from '../icons/Group 373.png';
 import fullTariff from '../icons/Group 373@2x.png';
 import warning from '../icons/WarningCircle.svg';
-import styles from './style.module.css';
+import styles from './TariffCard.module.scss';
 
 type PriceCategory = 'Эконом Базовый' | 'Эконом Стандарт' | 'Эконом Плюс';
 
