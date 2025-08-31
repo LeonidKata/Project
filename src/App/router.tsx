@@ -1,7 +1,11 @@
 import { createBrowserRouter } from 'react-router-dom';
 
+
+import { DestinationPage } from '../Pages/Destination/ui/DestinationPage';
+
 import { AirCraftPage } from '../Pages/Aircraft/AirCraftPage.tsx';
 import { BookingPage } from '../Pages/Booking/BookingPage.tsx';
+
 import { Home } from '../Pages/Home/Home';
 import { NotFound } from '../Pages/NotFound/NotFound';
 import { TimeZones } from '../Pages/TimeZones/TimeZones';
@@ -15,6 +19,11 @@ export const router = createBrowserRouter([
       {
         index: true,
         element: <Home />,
+      },
+      {
+
+        path: 'adnin/destination',
+        element: <DestinationPage />,
       },
       {
         path: 'admin/time_zones',
