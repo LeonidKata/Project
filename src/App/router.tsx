@@ -23,7 +23,7 @@ export const router = createBrowserRouter([
         element: <TicketsPage />,
       },
       {
-        path: 'adnin/destination',
+        path: 'admin/destination',
         element: <DestinationPage />,
       },
       {
