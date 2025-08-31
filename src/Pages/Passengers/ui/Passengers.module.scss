@@ -1,0 +1,7 @@
+.header {
+  @apply flex justify-between items-center mb-[15px] mt-[30px];
+}
+
+.titleTab {
+  @apply font-semibold italic text-[22px] leading-none tracking-normal align-middle;
+}

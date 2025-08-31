@@ -35,7 +35,7 @@ export default tseslint.config([
           bracketSpacing: true,
           bracketSameLine: false,
           arrowParens: 'always',
-          endOfLine: 'lf',
+          endOfLine: 'auto',
           plugins: ['@trivago/prettier-plugin-sort-imports'],
         },
       ],
